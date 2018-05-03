@@ -1,0 +1,81 @@
+.box {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+
+.hang {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.abanden {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pvcontent {
+    padding: 5px;
+    .alarm {
+        a {
+            text-decoration: none;
+        }
+    }
+    .pmain {
+        width: 100%;
+        height: 170px;
+        box-shadow: 0.1px 0.1px 4px #ccc;
+        padding: 10px;
+        p {
+            margin-top: 20px;
+            margin-left: 20px;
+            @extend .abanden;
+        }
+        input {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+    .secure {
+        width: 100%;
+        box-shadow: 0.5px 0.5px 4px #ccc;
+        margin-top: 30px;
+        padding: 10px;
+        >p {
+            height: 35px;
+            background: url("../img/bg_tit.png");
+            background-position: 10px -143px;
+            line-height: 35px;
+            text-indent: 2em;
+        }
+        div {
+            margin-top: 30px;
+            box-shadow: 0.1px 0.1px 4px rgba(19, 241, 167, 0.623);
+            height: 40px;
+            line-height: 40px;
+            padding-left: 5px;
+            p {
+                .tu {
+                    margin-right: 10px;
+                }
+                .glyphicon-remove {
+                    color: red;
+                }
+                .glyphicon-ok {
+                    color: #449d44;
+                }
+                .tishi {
+                    color: #ccc;
+                    margin-left: 50px;
+                }
+                a {
+                    float: right;
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}

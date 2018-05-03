@@ -1,0 +1,96 @@
+// compileCompressed: ../css/sale-successful.css
+$majorColor:#ffd237;
+$weiruan:"微软雅黑";
+.abanden{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.title{
+  width: 1160px;
+  height: 130px;
+  margin: 0 auto;
+  .logo{
+    width: 400px;
+    height: 130px;
+    float: left;
+    img{
+      width: 380px;
+      margin-top: 20px;
+    }
+  }
+  .head{
+    width: 760px;
+    height: 50px;
+    float: left;
+    margin-top: 73px;
+    border-bottom: 2px solid $majorColor;
+    p{
+      font-family: "微软雅黑";
+      font-size: 28px;
+      cursor: default;
+      @extend .abanden;
+    }
+    span{
+      font-size: 12px;
+      font-family: "微软雅黑";
+      float: right;
+      margin-top: -15px;
+      cursor: pointer;
+      @extend .abanden;
+      a{
+        color: black;
+      }
+    }
+  }
+}
+.muenbg{
+  width: 100%;
+  min-width: 1160px;
+  height: 35px;
+  background: $majorColor;
+  .muen{
+    width: 1160px;
+    margin: 10px auto auto auto;
+    p{
+      font-size: 18px;
+      font-family: $weiruan;
+      line-height: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      float: left;
+      @extend .abanden;
+    }
+    div{
+      float: right;
+      p{
+        float: left;
+        line-height: 35px;
+        margin-left: 10px;
+        @extend .abanden;
+        }
+      span{
+        float: left;
+        line-height: 35px;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-left: 10px;
+        @extend .abanden;
+      }
+      strong{
+        float: left;
+        line-height: 35px;
+        margin-left: 10px;
+        @extend .abanden;
+      }
+    }
+  }
+}
+.content{
+  width: 1160px;
+  margin: 50px auto auto auto;
+  div{
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,123 @@
+// compileCompressed: ../css/admin.css
+$majorColor:#009688;
+$major2Color:#268458;
+$bodybackColor:#eeeeee;
+$op:0.9;
+body {
+    background: $bodybackColor;
+}
+
+.on {
+    height: 0px;
+}
+
+.title_meun {
+    width: 1280px;
+    height: 20px;
+    margin: 0 auto;
+    a {
+        float: right;
+        color: black;
+        margin-right: 100px;
+        font-family: "微软雅黑";
+        font-size: 14px;
+    }
+}
+
+.admin_title {
+    width: 1280px;
+    height: 60px;
+    background: $majorColor;
+    margin: 0 auto;
+    position: relative;
+    .admin_title_content {
+        width: 119px;
+        float: left;
+        background: black;
+        opacity: $op;
+        p {
+            line-height: 60px;
+            color: white;
+            margin-left: 10px;
+        }
+    }
+    .admin_title_meun {
+        float: left;
+        ul {
+            li {
+                float: left;
+                margin-left: 55px;
+                line-height: 60px;
+                opacity: $op;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    .left_meun {
+        width: 200px;
+        min-height: 830px;
+        clear: both;
+        background: $majorColor;
+        div {
+            p {
+                background: $major2Color;
+                height: 50px;
+                font-size: 16px;
+                line-height: 50px;
+                color: #ddd;
+                opacity: $op;
+                text-indent: 1em;
+                font-family: "微软雅黑";
+                cursor: pointer;
+                margin-top: 2px;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                user-select: none;
+            }
+            ul {
+                overflow: hidden;
+                li {
+                    height: 30px;
+                    opacity: $op;
+                    font-size: 14px;
+                    text-indent: 1em;
+                    line-height: 30px;
+                    color: #ddd;
+                    cursor: pointer;
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    user-select: none;
+                }
+            }
+        }
+    }
+    .contont {
+        width: 1080px;
+        min-height: 830px;
+        background: white;
+        position: absolute;
+        left: 200px;
+        top: 60px;
+        .contont_title {
+            width: 1050px;
+            height: 35px;
+            background: $majorColor;
+            margin: 10px 0 0 15px;
+            line-height: 35px;
+            p {
+                text-indent: 1em;
+                color: white;
+                opacity: $op;
+            }
+        }
+        table {
+            width: 1050px;
+            margin-left: 15px;
+            margin-top: 10px;
+            textarea {
+                resize: none;
+            }
+        }
+    }
+}

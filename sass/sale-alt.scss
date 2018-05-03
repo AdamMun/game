@@ -1,0 +1,319 @@
+// compileCompressed: ../css/sale-alt.css
+$majorColor:#ffd237;
+$weiruan:"微软雅黑";
+.abanden{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.title{
+  width: 1160px;
+  height: 130px;
+  margin: 0 auto;
+  .logo{
+    width: 400px;
+    height: 130px;
+    float: left;
+    img{
+      width: 380px;
+      margin-top: 20px;
+    }
+  }
+  .head{
+    width: 760px;
+    height: 50px;
+    float: left;
+    margin-top: 73px;
+    border-bottom: 2px solid $majorColor;
+    p{
+      font-family: "微软雅黑";
+      font-size: 28px;
+      cursor: default;
+      @extend .abanden;
+    }
+    span{
+      font-size: 12px;
+      font-family: "微软雅黑";
+      float: right;
+      margin-top: -15px;
+      cursor: pointer;
+      @extend .abanden;
+      a{
+        color: black;
+      }
+    }
+  }
+}
+.muenbg{
+  width: 100%;
+  min-width: 1160px;
+  height: 35px;
+  background: $majorColor;
+  .muen{
+    width: 1160px;
+    margin: 10px auto auto auto;
+    p{
+      font-size: 18px;
+      font-family: $weiruan;
+      line-height: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      float: left;
+      @extend .abanden;
+    }
+    div{
+      float: right;
+      p{
+        float: left;
+        line-height: 35px;
+        margin-left: 10px;
+        @extend .abanden;
+        }
+      span{
+        float: left;
+        line-height: 35px;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-left: 10px;
+        @extend .abanden;
+      }
+      strong{
+        float: left;
+        line-height: 35px;
+        margin-left: 10px;
+        @extend .abanden;
+      }
+    }
+  }
+}
+.content{
+  width: 1160px;
+  margin: 30px auto auto auto;
+  .gameName{
+    h4{
+      font-weight: bolder;
+      @extend .abanden;
+    }
+    div{
+      margin-top: 50px;
+      float: left;
+      margin-left: 50px;
+    }
+  }
+  .gameContent{
+    margin-top: 50px;
+    h4{
+      font-weight: bolder;
+      @extend .abanden;
+    }
+    .fangshi{
+      margin-top: 30px;
+      p{
+        margin-top: 20px;
+        @extend .abanden;
+      }
+      .radio{
+        margin-top: 20px;
+        margin-left: 50px;
+        @extend .abanden;
+      }
+    }
+    .information{
+      margin-top: 30px;
+      p{
+      }
+      label{
+        margin-top: 30px;
+        display: block;
+        div{
+          input{
+            width: 400px;
+          }
+          textarea{
+            resize: none;
+            width: 650px;
+          }
+          span{
+            width: auto!important;
+          }
+        }
+      }
+    }
+    .inforimg{
+      p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      div{
+        label{
+          width: 150px;
+          height: 150px;
+          img{
+            width: 150px;
+            height: 150px;
+          }
+          input{
+            width: 0px;
+            height: 0px;
+            opacity: 0;
+            position: relative;;
+          }
+        }
+      }
+    }
+    .infortime{
+      p{
+        margin-bottom: 30px;
+      }
+      .altertime{
+        p{
+          float: left;
+          line-height: 35px;
+          margin-left: 10px;
+        }
+        div{
+          float: left;
+          width: 85px;
+          margin-left: 10px;
+          input{
+            width: 85px;
+          }
+        }
+      }
+    }
+    .yajin{
+      p{
+        @extend .abanden;
+      }
+    }
+    .kefu{
+      width: 1160px;
+      margin: 30px auto auto auto;
+      .xingji{
+        width: 900px;
+        height: 35px;
+        ul{
+          width: 900px;
+          height: 35px;
+          border:1px solid #ccc;
+          border-left: none;
+          background: #eee;
+          border-radius: 5px;
+          li{
+            width: 149px;
+            border-left: 1px solid #ccc;
+            border-radius: 5px;
+            float: left;
+            text-align: center;
+            line-height: 35px;
+            @extend .abanden;
+          }
+        }
+      }
+      .xingjikefu{
+        width: 300px;
+        height: 400px;
+        ul{
+          width: 900px;
+          height: 400px;
+          border-left: 1px solid #ccc;
+          border-radius: 5px;
+          li{
+            width: 299px;
+            height: 200px;
+            border:1px solid #ccc;
+            float: left;
+            border-top: none;
+            border-left: none;
+            padding: 10px 10px 10px 10px;
+            position: relative;
+            img{
+              width: 100px;
+              height: 100px;
+              float: left;
+            }
+            .xjcontent{
+              width: 150px;
+              height: 150px;
+              float: left;
+              margin-left: 20px;
+              div{
+                float: left;
+                height: 20px;
+                margin-top: 10px;
+                p{
+                  text-align: left;
+                  float: left;
+                  height: 20px;
+                }
+                img{
+                  width: 15px;
+                  height: 15px;
+                }
+              }
+            }
+            .pingyu{
+              width: 279px;
+              height: 30px;
+              line-height: 30px;
+              background: #ccc;
+              p{
+                text-indent: 2em;
+                color: black;
+              }
+            }
+          }
+        }
+        .paging{
+          width:899px;
+          height: 30px;
+          border: 1px solid #ccc;
+          border-top: none;
+          div{
+            float: right;
+            a{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.jishouxinxi{
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+  p{
+  }
+  label{
+    margin-top: 30px;
+    display: block;
+    div{
+      input{
+        width: 400px;
+      }
+      span{
+        width: auto!important;
+      }
+    }
+  }
+}
+.quren{
+  width: 1160px;
+  height: 35px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  input,p{
+    float: left;
+  }
+}
+.fabu{
+  width: 1160px;
+  height: 35px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+}

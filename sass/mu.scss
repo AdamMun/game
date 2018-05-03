@@ -1,0 +1,19 @@
+$majorColor:#ffd237;
+.box {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+}
+
+.hang {
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.abanden {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

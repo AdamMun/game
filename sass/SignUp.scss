@@ -1,0 +1,95 @@
+// compileCompressed: ../css/SignUp.css
+$majorColor:#ffd237;
+body{
+  background: url("../img/bg.png");
+  .main{
+    width: 1280px;
+    margin: 0 auto;
+    .content{
+      position: absolute;
+      top: 50%;
+      margin-top: -358px;
+      width: 1280px;
+      height: 716px;
+      background: url("../img/bg.png");
+      background-size: 1280px 716px;
+      .dllogo{
+        width: 210px;
+        position: absolute;
+        top: 95px;
+        left: 365px;
+      }
+      .dlwz{
+        width: 297px;
+        position: absolute;
+        top: 80px;
+        left: 680px;
+      }
+      .denglukuang{
+        width: 254px;
+        height: 341px;
+        position: absolute;
+        top: 207px;
+        left: 340px;
+        z-index: 999;
+        opacity: 0.7;
+        background: url("../img/dlbg.png");
+        background-size: 254px 341px;
+        div{
+          p{
+            font-family: "微软雅黑";
+            font-size: 16px;
+            width: 254px;
+            text-align: center;
+            letter-spacing: 1em;
+            margin-left: 0.5em;
+            margin-top: 1em;
+            font-weight: bold;
+          }
+        }
+        .dlcontent{
+          div{
+            input{
+              width:110px;
+              margin-left: 11px;
+              float: left;
+              &[type='text']{
+                font-size: 12px;
+              }
+            }
+          }
+          input{
+            width: 230px;
+            height: 35px;
+            margin-top: 18px;
+            margin-left: 12px;
+            border-radius: 5px;
+            border:1px solid #929292;
+            &:focus{
+              border:2px solid $majorColor;
+            }
+            &[type='button']{
+              background:$majorColor;
+              color:white;
+              border: none;
+              outline: none;
+              opacity: 1;
+            }
+          }
+          p{
+            font-size: 12px;
+            text-align: right;
+            letter-spacing: 0;
+            font-weight: normal;
+            margin-left: 0;
+            a{
+              margin-right: 15px;
+              color:#929292;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+$majorColor:#ffd237;
+.box{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+  }
+.hang{
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.abanden{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.headbg{
+    width: 100%;
+    min-width: 1160px;
+    height: 135px;
+    background: $majorColor;
+    .head{
+        width: 1160px;
+        height: 135px;
+        background: $majorColor;
+        margin: 0 auto;
+        .perLogo{
+            width: 360px;
+            height: 135px;
+            float: left;
+            img{
+                margin-top: 27px;
+            }
+        }
+        .meun{
+            width: 800px;
+            height: 135px;
+            float: left;
+            ul{
+                width: 800px;
+                height: 135px;
+                li{
+                    float: left;
+                    width: 100px;
+                    height: 135px;
+                    line-height: 135px;
+                    text-align: center;
+                    &:hover{
+                        color:white;
+                        background: black;
+                        a{
+                            color:white;
+                        }
+                    }
+                    a{
+                        color:black;
+                        font-size: 16px;
+                        font-family: '微软雅黑';
+                        @extend .abanden;
+                    }
+                }
+            }
+        }
+    }
+}
+.lujing{
+    width: 1160px;
+    height: 35px;
+    margin: 0 auto;
+}
+.percontent{
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 40px;
+    @extend .box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .left{
+        .perimformation{
+            width: 240px;
+            height: 300px;
+            box-shadow: 0.5px 0.5px 4px #ccc;
+            order:1;
+            .perimformationtitle{
+                width: 240px;
+                height: 35px;
+                background: $majorColor;
+                line-height: 35px;
+                span{
+                    margin-left: 20px;
+                    font-size: 18px;
+                }
+                p{
+                    display: inline;
+                }
+            }
+            .perimformationcontent{
+                width: 240px;
+                height: 265px;
+                padding: 20px;
+                @extend .abanden;
+                input{
+                    background: $majorColor;
+                    width: 100%;
+                    margin-top: 13px;
+                }
+                p{
+                    margin-top: 13px;
+                }
+                .con{
+                    text-align: center;
+                    width: 240px;
+                    a{
+                        color:#aaa;
+                        margin-left: -5px;
+                        margin-right: 39px;
+                    }
+                }
+            }
+        }
+        .permeun{
+            width: 240px;
+            margin-top: 50px;
+            order:3;
+            box-shadow: 0.5px 0.5px 4px #ccc;
+            div{
+                width: 240px;
+                margin-top: 2px;
+                p{
+                    width: 240px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: $majorColor;
+                    box-shadow: 0.5px 0.5px 1px #ccc;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    @extend .abanden;
+                    span{
+                        margin-right: 10px;
+                    }
+                    i{
+                        float: right;
+                        margin-right:20px;
+                        line-height: 30px;  
+                    }
+                }
+                ul{
+                    width: 200px;
+                    margin-left: 30px;
+                    overflow: hidden;
+                    li{
+                        margin-top: 10px;
+                        @extend .abanden;
+                        a{
+                            color:#999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pvcontent{
+        width: 850px;
+        box-shadow: 0.5px 0.5px 4px #ccc;
+        order:2;
+        margin-left: 30px;
+    }
+}
+.zero{
+    height: 0;
+}

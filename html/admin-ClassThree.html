@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name=description content="">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>网站后台管理系统</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/common.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../css/admin.css" media="screen" title="no title" charset="utf-8">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="title_meun" id="aaaa">
+    <a href="#">退出</a>
+    <a href="#">admin1</a>
+  </div>
+  <div class="admin_title">
+    <div class="admin_title_content">
+      <p>
+        网站后台管理
+      </p>
+    </div>
+    <div class="admin_title_meun">
+      <ul>
+        <li>用户充值订单</li>
+        <li>系统基本设置</li>
+        <li>发布用户通知</li>
+        <li>交易物品审核</li>
+        <li>交易物品订单</li>
+        <li>代练订单</li>
+        <li>点卡订单</li>
+        <li>提现订单</li>
+      </ul>
+    </div>
+    <div class="left_meun">
+      <div class="">
+        <p>
+          系统设置
+        </p>
+        <ul>
+          <li>网站设置</li>
+          <li>广告管理</li>
+          <li>客服管理</li>
+          <li>搜索排行</li>
+          <li>友情链接</li>
+          <li>在线支付设置</li>
+          <li>充值卡密生成</li>
+          <li>充值卡密管理</li>
+          <li>奖品设置</li>
+          <li>抽奖记录</li>
+        </ul>
+      </div>
+      <div class="">
+        <p>
+          游戏类别管理
+        </p>
+        <ul>
+          <li>添加一级游戏分类</li>
+          <li>添加二级游戏分类</li>
+          <li>添加三级游戏分类</li>
+          <li>游戏分类管理</li>
+          <li>点卡分类管理</li>
+        </ul>
+      </div>
+      <div class="">
+        <p>
+          信息管理
+        </p>
+        <ul>
+          <li>添加网站公告</li>
+          <li>管理网站公告</li>
+          <li>添加网站帮助</li>
+          <li>管理网站帮助</li>
+        </ul>
+      </div>
+      <div class="">
+        <p>
+          用户管理
+        </p>
+        <ul>
+          <li>注册用户管理</li>
+          <li>发送短消息通知</li>
+          <li>短消息通知管理</li>
+          <li>后台用户管理</li>
+        </ul>
+      </div>
+      <div class="">
+        <p>
+          问答与评价管理
+        </p>
+        <ul>
+          <li>自问自答</li>
+          <li>查看问题</li>
+          <li>增加评价</li>
+          <li>评价管理</li>
+        </ul>
+      </div>
+      <div class="">
+        <p>
+          游戏物品与订单管理
+        </p>
+        <ul>
+          <li>寄售信息</li>
+          <li>账号信息</li>
+          <li>担保信息</li>
+          <li>代练信息</li>
+          <li>寄售订单</li>
+          <li>担保订单</li>
+          <li>账号订单</li>
+          <li>代练订单</li>
+          <li>点卡管理</li>
+          <li>点卡订单</li>
+          <li>充值订单</li>
+          <li>提现订单</li>
+          <li>求购管理</li>
+          <li>求购订单</li>
+          <li>交换账号</li>
+        </ul>
+      </div>
+    </div>
+    <div class="contont">
+      <div class="contont_title">
+        <p>
+          三级游戏分类
+        </p>
+      </div>
+      <table class="table table-bordered">
+        <tr>
+          <th width="33.33%">
+            选择游戏服务器
+          </th>
+          <th width="33.33%">
+            填写分区名称（可填写多个，用英文;隔开）
+          </th>
+          <th width="33.33%">
+            操作
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <select class="form-control">
+              <option>A-艾尔之光-电信区</option>
+              <option>B-博尔特传说-电信区</option>
+              <option>C-传奇-电信区</option>
+              <option>D-地狱浩劫-电信区</option>
+              <option>E-饿狼传说-电信区</option>
+            </select>
+          </td>
+          <td>
+            <input type="text" class="form-control" placeholder="在此填写服务器，例如：四川一区;四川二区;四川三区;">
+          </td>
+          <td>
+            <input class="btn btn-default" type="button" value="确认提交">
+          </td>
+        </tr>
+      </table>
+      <div class="contont_title">
+        <p>
+          说明
+        </p>
+      </div>
+      <table class="table table-bordered">
+        <tr>
+          <td>
+            <p>
+              添加三级说明
+            </p>
+            <p>
+              选择游戏名称前面含有拼音的即可添加三级分类：如选择上级名称“[Z]征途-电信区”分类名称填写：“四川一区;四川二区”。
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="../js/admin.js" charset="utf-8"></script>
+</body>
+
+</html>

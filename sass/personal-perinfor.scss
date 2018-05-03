@@ -1,0 +1,54 @@
+@import 'mu.scss';
+.pvcontent {
+    .pvctitle {
+        padding: 15px;
+        p {
+            height: 35px;
+            line-height: 35px;
+            padding-left: 15px;
+            background: $majorColor;
+        }
+    }
+    .pvcont {
+        padding: 15px;
+        .items {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-top: 50px;
+            .glyphicon {
+                margin-right: 20px;
+            }
+            .glyphicon-remove-sign {
+                color: red;
+            }
+            .glyphicon-ok-sign {
+                color: green;
+            }
+            .spcon {
+                color: #ccc;
+            }
+        }
+        .tems {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 50px;
+            flex-direction: column;
+            div {
+                display: flex;
+                flex-direction: row;
+                margin-top: 40px;
+                align-items: baseline;
+                .btn {
+                    margin-left: 50px;
+                }
+            }
+            .time {
+                input {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}

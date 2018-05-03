@@ -1,0 +1,51 @@
+// compileCompressed: ../css/admin-userCharge.css
+$majorColor:#009688;
+$major2Color:#268458;
+$bodybackColor:#eeeeee;
+$op:0.9;
+.contont{
+  .content_tab{
+    table{
+      width: 1050px;
+      margin-left: 15px;
+      margin-top: 10px;
+      border:1px solid #ccc;
+      select{
+        height: 20px;
+        padding: 0;
+      }
+    }
+  }
+  .foot{
+    text-align: center;
+    .fenye{
+      width: 235px;
+      height: 36px;
+      margin-left: 15px;
+      float: left;
+      .pagination{
+        margin: 0;
+      }
+    }
+    .tiaozhuan{
+      width: 300px;
+      float: left;
+      line-height: 35px;
+      p{
+        float: left;
+      }
+      input{
+        width: 70px;
+        float: left;
+      }
+    }
+    .source{
+      input[type='text']{
+        width: 400px;
+      }
+      input{
+        float: left;
+      }
+    }
+  }
+}
