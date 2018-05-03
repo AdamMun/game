@@ -1,1 +1,10 @@
 @import 'mu.scss';
+.pvcontent {
+    padding: 15px;
+    .pvtitle {
+        padding-left: 15px;
+        background: $majorColor;
+        height: 35px;
+        line-height: 35px;
+    }
+}
