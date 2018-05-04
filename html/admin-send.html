@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>网站后台管理系统</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/common.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/admin.css" media="screen" title="no title" charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+</head>
+
+<body>
+    <div class="title_meun" id="aaaa">
+        <a href="#">退出</a>
+        <a href="#">admin1</a>
+    </div>
+    <div class="admin_title">
+        <div class="admin_title_content">
+            <p>
+                网站后台管理
+            </p>
+        </div>
+        <div class="admin_title_meun">
+            <ul>
+                <li>用户充值订单</li>
+                <li>系统基本设置</li>
+                <li>发布用户通知</li>
+                <li>交易物品审核</li>
+                <li>交易物品订单</li>
+                <li>代练订单</li>
+                <li>点卡订单</li>
+                <li>提现订单</li>
+            </ul>
+        </div>
+        <div class="left_meun">
+            <div class="">
+                <p>
+                    系统设置
+                </p>
+                <ul>
+                    <li>网站设置</li>
+                    <li>广告管理</li>
+                    <li>客服管理</li>
+                    <li>搜索排行</li>
+                    <li>友情链接</li>
+                    <li>在线支付设置</li>
+                    <li>充值卡密生成</li>
+                    <li>充值卡密管理</li>
+                    <li>奖品设置</li>
+                    <li>抽奖记录</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    游戏类别管理
+                </p>
+                <ul>
+                    <li>添加一级游戏分类</li>
+                    <li>添加二级游戏分类</li>
+                    <li>添加三级游戏分类</li>
+                    <li>游戏分类管理</li>
+                    <li>点卡分类管理</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    信息管理
+                </p>
+                <ul>
+                    <li>添加网站公告</li>
+                    <li>管理网站公告</li>
+                    <li>添加网站帮助</li>
+                    <li>管理网站帮助</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    用户管理
+                </p>
+                <ul>
+                    <li>注册用户管理</li>
+                    <li>发送短消息通知</li>
+                    <li>短消息通知管理</li>
+                    <li>后台用户管理</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    问答与评价管理
+                </p>
+                <ul>
+                    <li>自问自答</li>
+                    <li>查看问题</li>
+                    <li>增加评价</li>
+                    <li>评价管理</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    游戏物品与订单管理
+                </p>
+                <ul>
+                    <li>寄售信息</li>
+                    <li>账号信息</li>
+                    <li>担保信息</li>
+                    <li>代练信息</li>
+                    <li>寄售订单</li>
+                    <li>担保订单</li>
+                    <li>账号订单</li>
+                    <li>代练订单</li>
+                    <li>点卡管理</li>
+                    <li>点卡订单</li>
+                    <li>充值订单</li>
+                    <li>提现订单</li>
+                    <li>求购管理</li>
+                    <li>求购订单</li>
+                    <li>交换账号</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contont">
+            <div class="contont_title">
+                <p>
+                    发送用户通知
+                </p>
+            </div>
+            <div class="content-table">
+                <table class="table table-bordered">
+                    <thead>
+                        <th>
+                            标题区
+                        </th>
+                        <th>
+                            操作区
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>前台用户名</td>
+                            <td>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon">向全体人员发送消息此项填：1</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>通知标题</td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>通知内容</td>
+                            <td>
+                                <div id="editor">
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>操作</td>
+                            <td>
+                                <input type="button" class="btn btn-default" value="发送">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js" charset="utf-8"></script>
+    <script src="../js/admin-send.js" charset="utf-8"></script>
+</body>
+
+</html>
