@@ -259,3 +259,36 @@ $(function() {
         xiaoshi();
     });
 })
+
+
+
+// $.ajax({
+//     url: "http://192.168.8.109:8080/Game/admin",
+//     type: "get",
+//     cache: false,
+//     dataType: "jsonp",
+//     jsonp: "callback",
+//     jsonpCallback: "getMessage",
+//     success: function(data) {
+//         alert("success:" + data);
+//     },
+//     error: function() {
+//         alert("发生异常");
+//     }
+// });
+// var admin = "http://192.168.8.109:8080/";
+// console.log(admin + "Zoo/base/json.do?sid=1494&busiId=101")
+// $.ajax({
+//     type: "get",
+//     async: false,
+//     url: admin + "Zoo/base/json.do?sid=1494&busiId=101",
+//     data: { data: "data" },
+//     dataType: "jsonp", //数据类型为jsonp  
+//     jsonp: "jsonpCallback", //服务端用于接收callback调用的function名的参数  
+//     success: function(data) {
+//         console.log(data.result)
+//     },
+//     error: function() {
+//         alert('fail');
+//     }
+// });
