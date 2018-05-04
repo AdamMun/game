@@ -416,6 +416,15 @@ $majorColor:#ffd237;
                 }
             }
         }
+        .perimformation {
+            .perimformationtitle {
+                height: 35px;
+                background: $majorColor;
+                display: flex;
+                line-height: 35px;
+                padding-left: 15px;
+            }
+        }
     }
 }
 
