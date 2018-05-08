@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>网站后台管理系统</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/common.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/admin.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/admin-consign.css" media="screen" title="no title" charset="utf-8">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="title_meun" id="aaaa">
+        <a href="#">退出</a>
+        <a href="#">admin1</a>
+    </div>
+    <div class="admin_title">
+        <div class="admin_title_content">
+            <p>
+                网站后台管理
+            </p>
+        </div>
+        <div class="admin_title_meun">
+            <ul>
+                <li>用户充值订单</li>
+                <li>系统基本设置</li>
+                <li>发布用户通知</li>
+                <li>交易物品审核</li>
+                <li>交易物品订单</li>
+                <li>代练订单</li>
+                <li>点卡订单</li>
+                <li>提现订单</li>
+            </ul>
+        </div>
+        <div class="left_meun">
+            <div class="">
+                <p>
+                    系统设置
+                </p>
+                <ul>
+                    <li>网站设置</li>
+                    <li>广告管理</li>
+                    <li>客服管理</li>
+                    <li>搜索排行</li>
+                    <li>友情链接</li>
+                    <li>在线支付设置</li>
+                    <li>充值卡密生成</li>
+                    <li>充值卡密管理</li>
+                    <li>奖品设置</li>
+                    <li>抽奖记录</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    游戏类别管理
+                </p>
+                <ul>
+                    <li>添加一级游戏分类</li>
+                    <li>添加二级游戏分类</li>
+                    <li>添加三级游戏分类</li>
+                    <li>游戏分类管理</li>
+                    <li>点卡分类管理</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    信息管理
+                </p>
+                <ul>
+                    <li>添加网站公告</li>
+                    <li>管理网站公告</li>
+                    <li>添加网站帮助</li>
+                    <li>管理网站帮助</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    用户管理
+                </p>
+                <ul>
+                    <li>注册用户管理</li>
+                    <li>发送短消息通知</li>
+                    <li>短消息通知管理</li>
+                    <li>后台用户管理</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    问答与评价管理
+                </p>
+                <ul>
+                    <li>自问自答</li>
+                    <li>查看问题</li>
+                    <li>增加评价</li>
+                    <li>评价管理</li>
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    游戏物品与订单管理
+                </p>
+                <ul>
+                    <li>寄售信息</li>
+                    <li>账号信息</li>
+                    <li>担保信息</li>
+                    <li>代练信息</li>
+                    <li>寄售订单</li>
+                    <li>担保订单</li>
+                    <li>账号订单</li>
+                    <li>代练订单</li>
+                    <li>点卡管理</li>
+                    <li>点卡订单</li>
+                    <li>充值订单</li>
+                    <li>提现订单</li>
+                    <li>求购管理</li>
+                    <li>求购订单</li>
+                    <li>交换账号</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contont">
+            <div class="contont_title">
+                <p>
+                    担保管理
+                </p>
+            </div>
+            <div class="">
+                <table class="table table-bordered">
+                    <thead>
+                        <th>卖家用户名</th>
+                        <th>游戏名称</th>
+                        <th>出售标题</th>
+                        <th>单价（元）</th>
+                        <th>库存（件）</th>
+                        <th>是否审核</th>
+                        <th>交易状况</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>哒哒哒哒哒哒哒</td>
+                            <td>
+                                <p>地下城与勇士</p>
+                                <p>四川区/四川一区</p>
+                            </td>
+                            <td>
+                                4000金币==50元游戏币
+                            </td>
+                            <td>
+                                50
+                            </td>
+                            <td>1</td>
+                            <td>
+                                <input type="button" value="通过" class="btn btn-default">
+                                <input type="button" value="驳回" class="btn btn-default">
+                            </td>
+                            <td>
+                                交易完成
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)">修改</a>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="items-control">
+                    <div class="input-group">
+                        <span class="input-group-addon"><input type="checkbox" class="checkall" autocomplete="off">全选</span>
+                        <input type="button" value="删除选中项" class="btn btn-default">
+                    </div>
+                    <div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">144</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">到</span>
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">页</span>
+                        <span class="input-group-btn"><input type="button" class="btn btn-default" value="跳转"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/admin.js" charset="utf-8"></script>
+</body>
+
+</html>
