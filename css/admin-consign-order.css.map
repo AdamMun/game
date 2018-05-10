@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,AAAC,CACX,WAAW,CAAE,IAAI,CACjB,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,UAAU,CAO1B,AAVD,AAII,cAJU,CAIV,GAAG,AAAC,CACA,KAAK,CAAE,GAAG,CACb,AANL,AAOI,cAPU,CAOV,YAAY,AAAC,CACT,UAAU,CAAE,IAAI,CACnB",
+    "sources": [
+        "../sass/admin-consign-order.scss"
+    ],
+    "names": [],
+    "file": "admin-consign-order.css"
+}

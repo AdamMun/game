@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/common.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/admin.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="../css/admin-consign.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/admin-consign-order.css" media="screen" title="no title" charset="utf-8">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -126,7 +126,7 @@
         <div class="contont">
             <div class="contont_title">
                 <p>
-                    担保管理
+                    寄售订单
                 </p>
             </div>
             <div class="contont_title" style="background: white">
@@ -136,266 +136,355 @@
                     <span class="input-group-btn"><input type="button" class="btn btn-default" value="搜索"></span>
                 </div>
             </div>
-            <div class="">
-                <table class="table table-bordered">
+            <div>
+                <table class="table table-bordered tbcon">
                     <thead>
-                        <th>卖家用户名</th>
-                        <th>游戏名称</th>
-                        <th>出售标题</th>
-                        <th>单价（元）</th>
-                        <th>库存（件）</th>
-                        <th>是否审核</th>
-                        <th>交易状况</th>
-                        <th>操作</th>
+                        <th>
+                            买家用户名
+                        </th>
+                        <th>
+                            买家电话号码
+                        </th>
+                        <th>
+                            买家QQ号
+                        </th>
+                        <th>
+                            订单号
+                        </th>
+                        <th>
+                            商品名称
+                        </th>
+                        <th>
+                            数量
+                        </th>
+                        <th>
+                            总金额
+                        </th>
+                        <th>
+                            状态
+                        </th>
+                        <th>
+                            操作
+                        </th>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
                         <tr>
-                            <td>哒哒哒哒哒哒哒</td>
                             <td>
+                                154512315
+                            </td>
+                            <td>
+                                15378787878
+                            </td>
+                            <td>
+                                455575723
+                            </td>
+                            <td>
+                                dsa215412145123145
+                            </td>
+                            <td>
+                                <p>魔刹石2000个=50元</p>
                                 <p>地下城与勇士</p>
                                 <p>四川区/四川一区</p>
                             </td>
                             <td>
-                                4000金币==50元游戏币
+                                1
                             </td>
                             <td>
-                                50
-                            </td>
-                            <td>1</td>
-                            <td>
-                                <input type="button" value="通过" class="btn btn-default">
-                                <input type="button" value="驳回" class="btn btn-default">
+                                513
                             </td>
                             <td>
-                                交易完成
+                                已经支付
                             </td>
                             <td>
-                                <a href="javascript:void(0)">修改</a>
+                                <a href="javascript:void(0)">查看</a>
                                 <input type="checkbox">
                             </td>
                         </tr>
@@ -439,6 +528,7 @@
     </div>
 
     <script src="../js/admin.js" charset="utf-8"></script>
+    <script src="../js/admin-sendcontrol.js"></script>
 </body>
 
 </html>
