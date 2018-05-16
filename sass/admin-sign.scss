@@ -1,0 +1,30 @@
+@import "mu.scss";
+body {
+    background: url('../img/admin-sign.jpg');
+    .main {
+        width: 600px;
+        height: 300px;
+        background: wheat;
+        box-shadow: 0.5px 0.5px 4px white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -300px;
+        padding: 20px;
+        p {
+            text-align: center;
+            color: black;
+            font-size: 24px;
+            font-weight: bolder;
+            font-family: '微软雅黑';
+        }
+        div {
+            margin-top: 35px;
+        }
+        .btn {
+            margin-top: 30px;
+            margin-left: 250px;
+        }
+    }
+}
