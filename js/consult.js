@@ -10,6 +10,22 @@ $('.tab2').click(function() {
 $('.tab3').click(function() {
         sales()
     })
+    //安全保障服务
+$('.tab4').click(function() {
+        secure()
+    })
+    //收费标准
+$('.tab5').click(function() {
+        chargeStandrad()
+    })
+    //寄售协议
+$('.tab6').click(function() {
+        agreementOfConsignment();
+    })
+    //游戏注意事项
+$('.tab7').click(function() {
+        cautious();
+    })
     //寄售相关名词解释
 function consultConsign() {
     window.location.hash = '?=tab1';
@@ -312,6 +328,7 @@ function buy() {
         }
     });
 }
+// 寄售卖家帮助
 
 function sales() {
     window.location.hash = "?=tab3";
@@ -424,12 +441,484 @@ function sales() {
                             window.location.hash = "?=tab3-2-1";
                             $.ajax({
                                 type: "get",
-                                url: "../consult/sales/sales-download.html",
+                                url: "../consult/sales/sales-alter.html",
                                 dataType: "html",
                                 success: function(data) {
                                     $(".pvcontent").html(data);
                                 }
                             });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab3-2-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/sales/sales-undercarriage.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab3-2-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/sales/sales-reshelf.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $(".schedule").find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab3-3-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/sales/sales-progress.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $(".rank").find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab3-4-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/sales/sales-speeder.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $(".rank").find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab3-4-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/sales/sales-speeder.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $(".cash").find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab3-5-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/sales/sales-time.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+//安全保障服务
+
+function secure() {
+    window.location.hash = "?=tab4";
+    $.ajax({
+        type: "get",
+        url: "../consult/consult-secure.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $('.outtime').find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab4-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/outtime.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $('.indemnity').find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab4-2-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/indemnityToSeller.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab4-2-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/howIndemnity.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab4-2-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/indemnityToBuyer.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $('.greenGoods').find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab4-3-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/howGreenGoods.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab4-3-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/greenGoodsToSeller.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab4-3-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/greenGoodsToBuyer.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $('.promise').find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab4-4-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/promise.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+            $('.verification').find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab4-5-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secure/verification.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+//收费标准
+function chargeStandrad() {
+    window.location.hash = "?=tab5";
+    $.ajax({
+        type: "get",
+        url: "../consult/chargeStandrad/chargeStandrad.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+        }
+    });
+}
+//寄售协议
+function agreementOfConsignment() {
+    window.location.hash = "?=tab6";
+    $.ajax({
+        type: "get",
+        url: "../consult/consult-agreementOfConsignment.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $('.agreementOfConsignment').find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab6-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/agreementOfConsignment/consignmentTransactionAgreement.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab6-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/agreementOfConsignment/consignmentPurchaseAgreement.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab6-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/agreementOfConsignment/consignmentTransactionAgreement.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab6-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/agreementOfConsignment/consignmentTransactionAgreement.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+//游戏注意事项
+
+function cautious() {
+    window.location.hash = "?=tab7";
+    $.ajax({
+        type: "get",
+        url: "../consult/consult-cautious.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $('.cautious').find('a').each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab7-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/dnf.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab7-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/needForSpeedOL.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab7-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/crossout.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab7-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/fairyTale2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab7-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/tianYaMingYueDao.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab7-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/QQsecurity.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 7:
+                            window.location.hash = "?=tab7-1-7";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/auctionHouse.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 8:
+                            window.location.hash = "?=tab7-1-8";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/EquivalentTransaction.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 9:
+                            window.location.hash = "?=tab7-1-9";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/dn.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 10:
+                            window.location.hash = "?=tab7-1-10";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/jfzz.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 11:
+                            window.location.hash = "?=tab7-1-11";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/cautious/DNmoney.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
                             break;
                     }
                 })
