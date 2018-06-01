@@ -205,6 +205,7 @@ $(function() {
         }, 300);
         $(".jianjian").css('display', 'block');
         $("#youximingcheng").css("display", "block");
+        $(".screen").css('display', 'block');
     });
     //游戏区
     $("#yxq").click(function() {
@@ -214,6 +215,7 @@ $(function() {
         }, 300);
         $(".jianjian").css('display', 'block');
         $("#youxiqu").css("display", "block");
+        $(".screen").css('display', 'block');
     });
     //游戏服务器
     $("#yxfwq").click(function() {
@@ -223,6 +225,7 @@ $(function() {
         }, 300);
         $(".jianjian").css('display', 'block');
         $("#youxifu").css("display", "block");
+        $(".screen").css('display', 'block');
     });
     //交易类别
     $("#jylb").click(function() {
@@ -232,12 +235,14 @@ $(function() {
         }, 300);
         $(".jianjian").css('display', 'block');
         $("#jiaoyileibie").css("display", "block");
+        $(".screen").css('display', 'block');
     });
 })
 
 $(".guan").find('a').click(function() {
     bihe();
     xiaoshi()
+    $(".screen").css('display', 'none');
 });
 
 $(function() {
@@ -257,9 +262,15 @@ $(function() {
         $("#jylb").find("p").html($(this).text())
         bihe();
         xiaoshi();
+        $(".screen").css('display', 'none');
     });
 })
-
+$('.screen').click(function() {
+    console.log(111)
+    bihe();
+    xiaoshi();
+    $(".screen").css('display', 'none');
+})
 
 
 // $.ajax({

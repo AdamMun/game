@@ -1,59 +1,63 @@
 $majorColor:#ffd237;
-.box{
-    display: -webkit-flex; /* Safari */
+.box {
+    display: -webkit-flex;
+    /* Safari */
     display: flex;
-  }
-.hang{
+}
+
+.hang {
     white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.abanden{
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+
+.abanden {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.headbg{
+
+.headbg {
     width: 100%;
     min-width: 1160px;
     height: 135px;
     background: $majorColor;
-    .head{
+    .head {
         width: 1160px;
         height: 135px;
         background: $majorColor;
         margin: 0 auto;
-        .perLogo{
+        .perLogo {
             width: 360px;
             height: 135px;
             float: left;
-            img{
+            img {
                 margin-top: 27px;
             }
         }
-        .meun{
+        .meun {
             width: 800px;
             height: 135px;
             float: left;
-            ul{
+            ul {
                 width: 800px;
                 height: 135px;
-                li{
+                li {
                     float: left;
                     width: 100px;
                     height: 135px;
                     line-height: 135px;
                     text-align: center;
-                    &:hover{
-                        color:white;
+                    &:hover {
+                        color: white;
                         background: black;
-                        a{
-                            color:white;
+                        a {
+                            color: white;
                         }
                     }
-                    a{
-                        color:black;
+                    a {
+                        color: black;
                         font-size: 16px;
                         font-family: '微软雅黑';
                         @extend .abanden;
@@ -63,12 +67,14 @@ $majorColor:#ffd237;
         }
     }
 }
-.lujing{
+
+.lujing {
     width: 1160px;
     height: 35px;
     margin: 0 auto;
 }
-.percontent{
+
+.percontent {
     width: 1160px;
     margin: 0 auto;
     margin-top: 40px;
@@ -76,58 +82,58 @@ $majorColor:#ffd237;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    .left{
-        .perimformation{
+    .left {
+        .perimformation {
             width: 240px;
             height: 300px;
             box-shadow: 0.5px 0.5px 4px #ccc;
-            order:1;
-            .perimformationtitle{
+            order: 1;
+            .perimformationtitle {
                 width: 240px;
                 height: 35px;
                 background: $majorColor;
                 line-height: 35px;
-                span{
+                span {
                     margin-left: 20px;
                     font-size: 18px;
                 }
-                p{
+                p {
                     display: inline;
                 }
             }
-            .perimformationcontent{
+            .perimformationcontent {
                 width: 240px;
                 height: 265px;
                 padding: 20px;
                 @extend .abanden;
-                input{
+                input {
                     background: $majorColor;
                     width: 100%;
                     margin-top: 13px;
                 }
-                p{
-                    margin-top: 13px;
+                p {
+                    margin-top: 5px;
                 }
-                .con{
+                .con {
                     text-align: center;
                     width: 240px;
-                    a{
-                        color:#aaa;
+                    a {
+                        color: #aaa;
                         margin-left: -5px;
                         margin-right: 39px;
                     }
                 }
             }
         }
-        .permeun{
+        .permeun {
             width: 240px;
             margin-top: 50px;
-            order:3;
+            order: 3;
             box-shadow: 0.5px 0.5px 4px #ccc;
-            div{
+            div {
                 width: 240px;
                 margin-top: 2px;
-                p{
+                p {
                     width: 240px;
                     height: 30px;
                     line-height: 30px;
@@ -136,37 +142,38 @@ $majorColor:#ffd237;
                     padding-left: 10px;
                     cursor: pointer;
                     @extend .abanden;
-                    span{
+                    span {
                         margin-right: 10px;
                     }
-                    i{
+                    i {
                         float: right;
-                        margin-right:20px;
-                        line-height: 30px;  
+                        margin-right: 20px;
+                        line-height: 30px;
                     }
                 }
-                ul{
+                ul {
                     width: 200px;
                     margin-left: 30px;
                     overflow: hidden;
-                    li{
+                    li {
                         margin-top: 10px;
                         @extend .abanden;
-                        a{
-                            color:#999;
+                        a {
+                            color: #999;
                         }
                     }
                 }
             }
         }
     }
-    .pvcontent{
+    .pvcontent {
         width: 850px;
         box-shadow: 0.5px 0.5px 4px #ccc;
-        order:2;
+        order: 2;
         margin-left: 30px;
     }
 }
-.zero{
+
+.zero {
     height: 0;
 }

@@ -110,9 +110,46 @@ $(".tab32").click(function() {
 $(".tab33").click(function() {
     diankaAgreement()
 })
-
-
-//寄售相关名词解释
+$('.tab35').click(function() {
+    aas_accountSignUp()
+})
+$('.tab36').click(function() {
+    aas_securitySingnIn()
+})
+$('.tab37').click(function() {
+    aas_certification()
+})
+$('.tab38').click(function() {
+    aas_identity()
+})
+$('.tab39').click(function() {
+    aas_cashfid()
+})
+$('.tab40').click(function() {
+    aas_mobilephone()
+})
+$('.tab41').click(function() {
+    aas_password()
+})
+$('.tab42').click(function() {
+    aas_7x4x()
+})
+$('.tab43').click(function() {
+    aas_integration()
+})
+$('.tab44').click(function() {
+    aas_commodityfound()
+})
+$('.tab45').click(function() {
+    aas_cashUnlock()
+})
+$('.tab46').click(function() {
+    aas_perfectInformation()
+})
+$('.tab47').click(function() {
+        aas_userCenter()
+    })
+    //寄售相关名词解释
 function consultConsign() {
     window.location.hash = '?=tab1';
     $.ajax({
@@ -3588,6 +3625,742 @@ function diankaAgreement() {
                             $.ajax({
                                 type: "get",
                                 url: "../consult/dianka/G-agreement/agreement-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_accountSignUp() {
+    window.location.hash = "?=tab35";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/A-accountSignUp/accountSignUp.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab35-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/A-accountSignUp/accountSignUp-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_securitySingnIn() {
+    window.location.hash = "?=tab36";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/B-securitySignIn/securitySignIn.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab36-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/B-securitySignIn/securitySignIn-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab36-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/B-securitySignIn/securitySignIn-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab36-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/B-securitySignIn/securitySignIn-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_certification() {
+    window.location.hash = "?=tab37";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/C-certification/certification.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab37-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/C-certification/certification-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab37-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/C-certification/certification-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_identity() {
+    window.location.hash = "?=tab38";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/D-identity/identity.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab38-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/D-identity/identity-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab38-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/D-identity/identity-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_cashfid() {
+    window.location.hash = "?=tab39";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/E-cashfid/cashfid.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab39-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab39-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab39-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab39-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab39-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab39-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 7:
+                            window.location.hash = "?=tab39-1-7";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-7.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 8:
+                            window.location.hash = "?=tab39-1-8";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-8.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 9:
+                            window.location.hash = "?=tab39-1-9";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-9.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 10:
+                            window.location.hash = "?=tab39-1-10";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-10.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 11:
+                            window.location.hash = "?=tab39-1-11";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-11.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 12:
+                            window.location.hash = "?=tab39-1-12";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/E-cashfid/cashfid-12.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_mobilephone() {
+    window.location.hash = "?=tab40";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/F-mobilephone/mobilephone.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab40-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/F-mobilephone/mobliephone-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab40-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/F-mobilephone/mobliephone-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab40-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/F-mobilephone/mobliephone-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab40-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/F-mobilephone/mobliephone-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab40-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/F-mobilephone/mobliephone-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab40-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/F-mobilephone/mobliephone-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+
+function aas_password() {
+    window.location.hash = "?=tab41";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/G-password/password.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab41-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/G-password/password-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab41-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/G-password/password-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+
+function aas_7x4x() {
+    window.location.hash = "?=tab42";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/H-7x4x/7x4x.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab42-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/H-7x4x/7x4x-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab42-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/H-7x4x/7x4x-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab42-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/H-7x4x/7x4x-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab42-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/H-7x4x/7x4x-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab42-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/H-7x4x/7x4x-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab42-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/H-7x4x/7x4x-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_integration() {
+    window.location.hash = "?=tab43";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/I-integration/integration.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab43-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/I-integration/integration-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab43-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/I-integration/integration-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab43-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/I-integration/integration-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab43-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/I-integration/integration-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+
+function aas_commodityfound() {
+    window.location.hash = "?=tab44";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/J-commodityfound/commodityfound.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab44-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/J-commodityfound/commodityfound-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_cashUnlock() {
+    window.location.hash = "?=tab45";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/K-cashUnlock/cashUnlock.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab45-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/K-cashUnlock/cashUnlock-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab45-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/K-cashUnlock/cashUnlock-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_perfectInformation() {
+    window.location.hash = "?=tab46";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/L-perfectInformation/perfectInformation.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab46-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/L-perfectInformation/perfectInformation-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function aas_userCenter() {
+    window.location.hash = "?=tab47";
+    $.ajax({
+        type: "get",
+        url: "../consult/accountAndSecurity/M-userCenter/userCenter.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab46-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/accountAndSecurity/M-userCenter/userCenter-1.html",
                                 dataType: "html",
                                 success: function(data) {
                                     $(".pvcontent").html(data);
