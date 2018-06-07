@@ -225,30 +225,41 @@ $majorColor:#ffd237;
 
 .navbg {
     width: 100%;
-    height: 35px;
+    height: 40px;
     min-width: 1160px;
     background: $majorColor;
     .nav {
         width: 1160px;
-        height: 35px;
+        height: 40px;
         background: $majorColor;
         margin: 0 auto;
         ul {
             width: 1160px;
-            height: 35px;
+            height: 40px;
             li {
                 float: left;
                 width: 165px;
-                height: 35px;
-                line-height: 35px;
+                height: 40px;
+                line-height: 40px;
                 font-family: '微软雅黑';
-                font-size: 18px;
-                color: white;
+                font-size: 19px;
+                color: black;
                 text-align: center;
                 cursor: default;
+                font-weight: bold;
                 &:hover {
                     background: black;
                     color: white;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    color: black;
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
                 }
             }
         }
@@ -454,7 +465,7 @@ $majorColor:#ffd237;
     height: 610px;
     .tab {
         width: 700px;
-        height: 610px;
+        min-height: 610px;
         padding: 10px 10px 10px 10px;
         box-shadow: 0.5px 0.5px 5px #ccc;
         float: left;
@@ -462,7 +473,7 @@ $majorColor:#ffd237;
             tr {
                 th {
                     background: $majorColor;
-                    color: white;
+                    color: black;
                     cursor: default;
                 }
                 td {
@@ -473,6 +484,9 @@ $majorColor:#ffd237;
                         overflow: hidden;
                         width: 400px;
                         cursor: pointer;
+                        a {
+                            color: black;
+                        }
                     }
                 }
             }
@@ -527,6 +541,14 @@ $majorColor:#ffd237;
                         text-overflow: ellipsis;
                         width: 330px;
                         display: block;
+                        font-size: 17px;
+                        margin-bottom: 11px;
+                        color: black;
+                    }
+                    .and {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                     a {
                         color: black;

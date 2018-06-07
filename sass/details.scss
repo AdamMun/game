@@ -230,30 +230,36 @@ $majorColor:#ffd237;
 
 .navbg {
     width: 100%;
-    height: 35px;
+    height: 55px;
     min-width: 1160px;
     background: $majorColor;
     .nav {
         width: 1160px;
-        height: 35px;
+        height: 55px;
         background: $majorColor;
         margin: 0 auto;
         ul {
             width: 1160px;
-            height: 35px;
+            height: 55px;
             li {
                 float: left;
                 width: 165px;
-                height: 35px;
-                line-height: 35px;
+                height: 55px;
+                line-height: 55px;
                 font-family: '微软雅黑';
                 font-size: 18px;
-                color: white;
+                color: black;
                 text-align: center;
                 cursor: default;
                 &:hover {
                     background: black;
                     color: white;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    color: black;
                 }
             }
         }
@@ -267,7 +273,7 @@ $majorColor:#ffd237;
     border-bottom: 1px solid #ccc;
     .salecontent {
         width: 800px;
-        height: 300px;
+        height: 360px;
         position: relative;
         padding: 10px;
         .saletitle {
@@ -278,14 +284,17 @@ $majorColor:#ffd237;
                 width: 700px;
                 height: 35px;
                 cursor: default;
-                @extend .hang;
+                a {
+                    color: black;
+                    font-size: 21px;
+                }
             }
         }
         .saleimg {
             width: 230px;
             height: 230px;
             padding: 15px;
-            margin-top: 15px;
+            margin-top: 52px;
             img {
                 width: 200px;
                 height: 200px;
@@ -296,7 +305,7 @@ $majorColor:#ffd237;
             width: 396px;
             height: 227px;
             ;
-            top: 50px;
+            top: 95px;
             left: 302px;
             p {
                 margin-top: 15px;
@@ -317,7 +326,7 @@ $majorColor:#ffd237;
         left: 860px;
         padding: 20px;
         h4 {
-            background: #e1e1e1;
+            background: $majorColor;
             font-weight: bold;
             display: block;
             padding: 0 0 0 10px;
@@ -350,7 +359,7 @@ $majorColor:#ffd237;
         text-indent: 2em;
         font-size: 20px;
         font-weight: bold;
-        background: #e1e1e1;
+        background: $majorColor;
     }
     .sallerimg {
         width: 400px;
@@ -404,7 +413,7 @@ $majorColor:#ffd237;
             position: absolute;
             font-weight: bold;
             z-index: 10;
-            left: 101px;
+            left: 139px;
             top: -10px;
             background: white;
         }
@@ -452,7 +461,7 @@ $majorColor:#ffd237;
             text-indent: 2em;
             font-size: 20px;
             font-weight: bold;
-            background: #e1e1e1;
+            background: $majorColor;
         }
     }
     .linecontent {

@@ -21,16 +21,16 @@ $majorColor:#ffd237;
 .headbg {
     width: 100%;
     min-width: 1160px;
-    height: 135px;
+    height: 147px;
     background: $majorColor;
     .head {
         width: 1160px;
-        height: 135px;
+        height: 147px;
         background: $majorColor;
         margin: 0 auto;
         .perLogo {
             width: 360px;
-            height: 135px;
+            height: 147px;
             float: left;
             img {
                 margin-top: 27px;
@@ -38,16 +38,18 @@ $majorColor:#ffd237;
         }
         .meun {
             width: 800px;
-            height: 135px;
+            height: 147px;
             float: left;
             ul {
                 width: 800px;
-                height: 135px;
+                height: 147px;
                 li {
                     float: left;
                     width: 100px;
-                    height: 135px;
-                    line-height: 135px;
+                    height: 147px;
+                    line-height: 147px;
+                    font-size: 20px;
+                    font-weight: bold;
                     text-align: center;
                     &:hover {
                         color: white;
@@ -72,6 +74,7 @@ $majorColor:#ffd237;
     width: 1160px;
     height: 35px;
     margin: 0 auto;
+    font-size: 16px;
 }
 
 .percontent {

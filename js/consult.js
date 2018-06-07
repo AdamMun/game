@@ -147,7 +147,37 @@ $('.tab46').click(function() {
     aas_perfectInformation()
 })
 $('.tab47').click(function() {
-        aas_userCenter()
+    aas_userCenter()
+})
+$('.tab48').click(function() {
+    quelityRating()
+})
+$('.tab49').click(function() {
+    creditAccumulute()
+})
+$('.tab50').click(function() {
+    creditevaluation()
+})
+$('.tab51').click(function() {
+    rankAndAuthority()
+})
+$('.tab52').click(function() {
+    shoppingcord()
+})
+$('.tab53').click(function() {
+    commonProblem()
+})
+$('.tab54').click(function() {
+    secureProtect()
+})
+$('.tab55').click(function() {
+    businessline()
+})
+$('.tab56').click(function() {
+    incrementServise()
+})
+$('.tab57').click(function() {
+        officalCertification()
     })
     //寄售相关名词解释
 function consultConsign() {
@@ -4357,10 +4387,714 @@ function aas_userCenter() {
                 $(this).click(function() {
                     switch ($(this).index()) {
                         case 1:
-                            window.location.hash = "?=tab46-1-1";
+                            window.location.hash = "?=tab47-1-1";
                             $.ajax({
                                 type: "get",
                                 url: "../consult/accountAndSecurity/M-userCenter/userCenter-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function quelityRating() {
+    window.location.hash = "?=tab48";
+    $.ajax({
+        type: "get",
+        url: "../consult/star/A-quelityRating/quelityRating.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab48-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/A-quelityRating/quelityRating-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab48-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/A-quelityRating/quelityRating-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab48-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/A-quelityRating/quelityRating-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function creditAccumulute() {
+    window.location.hash = "?=tab49";
+    $.ajax({
+        type: "get",
+        url: "../consult/star/B-creditAccumulate/creditAccumulate.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab49-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/B-creditAccumulate/creditAccumulate-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab49-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/B-creditAccumulate/creditAccumulate-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                            window.location.hash = "?=tab49-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/B-creditAccumulate/creditAccumulate-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                            window.location.hash = "?=tab49-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/B-creditAccumulate/creditAccumulate-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function creditevaluation() {
+    window.location.hash = "?=tab50";
+    $.ajax({
+        type: "get",
+        url: "../consult/star/C-creditevaluation/creditevaluation.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab50-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab50-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab50-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab50-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab50-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab50-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 7:
+                            window.location.hash = "?=tab50-1-7";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-7.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 8:
+                            window.location.hash = "?=tab50-1-8";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/C-creditevaluation/creditevaluation-8.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function rankAndAuthority() {
+    window.location.hash = "?=tab51";
+    $.ajax({
+        type: "get",
+        url: "../consult/star/D-rankAndAuthority/rankAndAuthority.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab51-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/D-rankAndAuthority/rankAndAuthority-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab51-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/D-rankAndAuthority/rankAndAuthority-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab51-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/D-rankAndAuthority/rankAndAuthority-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab51-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/D-rankAndAuthority/rankAndAuthority-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab51-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/D-rankAndAuthority/rankAndAuthority-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab51-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/star/D-rankAndAuthority/rankAndAuthority-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function shoppingcord() {
+    window.location.hash = "?=tab52";
+    $.ajax({
+        type: "get",
+        url: "../consult/serviceHelp/A-shoppingcart/shoppingcart.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab52-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/A-shoppingcart/shoppingcart-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab52-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/A-shoppingcart/shoppingcart-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab52-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/A-shoppingcart/shoppingcart-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab52-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/A-shoppingcart/shoppingcart-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab52-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/A-shoppingcart/shoppingcart-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab52-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/A-shoppingcart/shoppingcart-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function commonProblem() {
+    window.location.hash = "?=tab53";
+    $.ajax({
+        type: "get",
+        url: "../consult/serviceHelp/B-commonProblem/commonProblem.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab53-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/serviceHelp/B-commonProblem/commonProblem-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function secureProtect() {
+    window.location.hash = "?=tab54";
+    $.ajax({
+        type: "get",
+        url: "../consult/userHelp/A-secureProtect/secureProtect.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab54-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/A-secureProtect/secureProtect-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab54-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/A-secureProtect/secureProtect-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab54-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/A-secureProtect/secureProtect-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab54-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/A-secureProtect/secureProtect-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function businessline() {
+    window.location.hash = "?=tab55";
+    $.ajax({
+        type: "get",
+        url: "../consult/userHelp/B-businessline/businessline.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab55-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/B-businessline/businessline-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab55-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/B-businessline/businessline-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function incrementServise() {
+    window.location.hash = "?=tab56";
+    $.ajax({
+        type: "get",
+        url: "../consult/userHelp/C-incrementServise/incrementServise.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab56-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab56-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab56-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab56-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab56-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab56-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 7:
+                            window.location.hash = "?=tab56-1-7";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-7.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 8:
+                            window.location.hash = "?=tab56-1-8";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-8.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 9:
+                            window.location.hash = "?=tab56-1-9";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-9.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 10:
+                            window.location.hash = "?=tab56-1-10";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userHelp/C-incrementServise/incrementServise-10.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function commonProblem() {
+    window.location.hash = "?=tab57";
+    $.ajax({
+        type: "get",
+        url: "../consult/secrurityCard/secrurityCard.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab57-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secrurityCard/secrurityCard-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab57-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/secrurityCard/secrurityCard-2.html",
                                 dataType: "html",
                                 success: function(data) {
                                     $(".pvcontent").html(data);
