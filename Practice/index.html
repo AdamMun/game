@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>代练</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/practice_index.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="screen" style="width: 100%;height: 100%;position: fixed;z-index: 1;display: none">
+
+    </div>
+    <div class="title_bg">
+        <div class="title_meun">
+            <ul>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">帮助</a></li>
+                <li><a href="#">建议</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="Logo">
+        <img src="../img/logo.png" alt="游戏交易网站logo" />
+        <div class="search">
+            <div class="choose">
+                <ul>
+                    <li class="acc">精确搜索</li>
+                    <li class="sim">简单搜索</li>
+                </ul>
+            </div>
+            <div class="accurateSearch">
+                <ul>
+                    <li class="option" id="yxmc">
+                        <p>游戏名称</p>
+                    </li>
+                    <li class="option" id="yxq">
+                        <p>游戏区</p>
+                    </li>
+                    <li class="option" id="yxfwq">
+                        <p>游戏服务器</p>
+                    </li>
+                    <li class="option" id="jylb">
+                        <p>交易类别</p>
+                    </li>
+                    <li><input type="text" name="name" placeholder="输入关键字"></li>
+                    <li class="csearch"><input type="button" name="name" value="搜索"></li>
+                </ul>
+            </div>
+            <div class="simpleSearch">
+                <input type="text" name="name" value="" placeholder="输入关键字">
+                <input type="button" name="name" value="搜索">
+            </div>
+        </div>
+
+        <div class="tanchuang" id="youximingcheng">
+            <div class="guan">
+                <span>请选择游戏</span>
+                <a href="#">关闭</a>
+            </div>
+            <div class="zimu">
+                <ul>
+                    <li>热门</li>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li>H</li>
+                    <li>I</li>
+                    <li>J</li>
+                    <li>K</li>
+                    <li>L</li>
+                    <li>M</li>
+                    <li>N</li>
+                    <li>O</li>
+                    <li>P</li>
+                    <li>Q</li>
+                    <li>R</li>
+                    <li>S</li>
+                    <li>T</li>
+                    <li>U</li>
+                    <li>V</li>
+                    <li>W</li>
+                    <li>X</li>
+                    <li>Y</li>
+                    <li>Z</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟打打啊浮动暗帝</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">英雄联盟</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tanchuang" id="youxiqu">
+            <div class="guan">
+                <span>请选择游戏大区：</span>
+                <a href="#">关闭</a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                    <li><a href="#">四川区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tanchuang" id="youxifu">
+            <div class="guan">
+                <span>请选择游戏服务器</span>
+                <a href="#">关闭</a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                    <li><a href="#">四川一区</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tanchuang" id="jiaoyileibie">
+            <div class="guan">
+                <span>请选择交易类别</span>
+                <a href="#">关闭</a>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+                    <li><a href="#">点卡</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="jianjian"></div>
+    </div>
+    <div class="navbg">
+        <div class="nav">
+            <ul>
+                <li>首页</li>
+                <li>我要买</li>
+                <li>我要卖</li>
+                <li>账号租赁</li>
+                <li>购买点卡</li>
+                <li style="background:#ccae45;">代练</li>
+                <li>客服</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bannerBg">
+        <div class="banner">
+            <div class="gameChoose">
+                <p>热门游戏代练</p>
+                <ul>
+                    <li>
+                        <a href="JavaScript:void(0)">英雄联盟</a>
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </li>
+                    <li>
+                        <a href="JavaScript:void(0)">地下城与勇士</a>
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </li>
+                    <li>
+                        <a href="JavaScript:void(0)">魔兽世界（国服）</a>
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </li>
+                    <li>
+                        <a href="JavaScript:void(0)">王者荣耀</a>
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </li>
+                    <li>
+                        <a href="JavaScript:void(0)">穿越火线</a>
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </li>
+                </ul>
+                <span><a href="JavaScript:void(0)">更多游戏>></a></span>
+            </div>
+            <div class="rollimg">
+                <ul style="left:0px;">
+                    <li>
+                        <a href="#"><img src="img/lunbo.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/lunbo.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/lunbo.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/lunbo.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/lunbo.png" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="entrance">
+
+            </div>
+            <div class="hotstudio">
+
+            </div>
+            <div class="rollitems">
+
+            </div>
+            <div class="publicitems">
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/practice_index.js"></script>
+</body>
+
+</html>

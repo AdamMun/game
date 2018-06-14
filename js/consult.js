@@ -177,9 +177,38 @@ $('.tab56').click(function() {
     incrementServise()
 })
 $('.tab57').click(function() {
-        officalCertification()
-    })
-    //寄售相关名词解释
+    officalCertification()
+})
+$('.tab58').click(function() {
+    securityCard()
+})
+$('.tab59').click(function() {
+    chargeCenter()
+})
+$('.tab60').click(function() {
+    commodityPublic()
+})
+$('.tab61').click(function() {
+    userPublic()
+})
+$('.tab62').click(function() {
+    practiceWord()
+})
+$('.tab63').click(function() {
+    practicebuyer()
+})
+$('.tab64').click(function() {
+    practiceseller()
+})
+$('.tab65').click(function() {
+    practiceChargeStandrad()
+})
+
+$('.tab66').click(function() {
+    practiceStandrad()
+})
+var cont = "";
+//寄售相关名词解释
 function consultConsign() {
     window.location.hash = '?=tab1';
     $.ajax({
@@ -187,6 +216,7 @@ function consultConsign() {
         url: "../consult/consult-consign.html",
         dataType: "html",
         success: function(data) {
+            cont = data;
             $(".pvcontent").html(data);
             $(".whyconsign").on("click", function() {
                 whyconsign();
@@ -205,6 +235,7 @@ function whyconsign() {
         url: "../consult/consult-whyconsign.html",
         dataType: "html",
         success: function(data) {
+            cont = data;
             $(".pvcontent").html(data);
         }
     });
@@ -5072,7 +5103,7 @@ function commonProblem() {
     window.location.hash = "?=tab57";
     $.ajax({
         type: "get",
-        url: "../consult/secrurityCard/secrurityCard.html",
+        url: "../consult/userHelp/D-officalCertification/officalCertification.html",
         dataType: "html",
         success: function(data) {
             $(".pvcontent").html(data);
@@ -5083,6 +5114,37 @@ function commonProblem() {
                             window.location.hash = "?=tab57-1-1";
                             $.ajax({
                                 type: "get",
+                                url: "../consult/userHelp/D-officalCertification/officalCertification-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function securityCard() {
+    window.location.hash = "?=tab58";
+    $.ajax({
+        type: "get",
+        url: "../consult/secrurityCard/secrurityCard.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab58-1-1";
+                            $.ajax({
+                                type: "get",
                                 url: "../consult/secrurityCard/secrurityCard-1.html",
                                 dataType: "html",
                                 success: function(data) {
@@ -5091,10 +5153,413 @@ function commonProblem() {
                             });
                             break;
                         case 2:
-                            window.location.hash = "?=tab57-1-2";
+                            window.location.hash = "?=tab58-1-2";
                             $.ajax({
                                 type: "get",
                                 url: "../consult/secrurityCard/secrurityCard-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+
+function chargeCenter() {
+    window.location.hash = "?=tab59";
+    $.ajax({
+        type: "get",
+        url: "../consult/chargeCenter/chargeCenter.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab59-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab59-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab59-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 4:
+                            window.location.hash = "?=tab59-1-4";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-4.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 5:
+                            window.location.hash = "?=tab59-1-5";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-5.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 6:
+                            window.location.hash = "?=tab59-1-6";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-6.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 7:
+                            window.location.hash = "?=tab59-1-7";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-7.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 8:
+                            window.location.hash = "?=tab59-1-8";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-8.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 9:
+                            window.location.hash = "?=tab59-1-9";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-9.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 10:
+                            window.location.hash = "?=tab59-1-10";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/chargeCenter/chargeCenter-10.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function commodityPublic() {
+    window.location.hash = "?=tab60";
+    $.ajax({
+        type: "get",
+        url: "../consult/commodityPublic/commodityPublic.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab60-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/commodityPublic/commodityPublic-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function userPublic() {
+    window.location.hash = "?=tab61";
+    $.ajax({
+        type: "get",
+        url: "../consult/userPublic/userPublic.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab61-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/userPublic/userPublic-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function practiceWord() {
+    window.location.hash = "?=tab62";
+    $.ajax({
+        type: "get",
+        url: "../consult/practice/A-practiceWords/practiceWord.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab62-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/A-practiceWords/practiceWord-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab62-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/A-practiceWords/practiceWord-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 3:
+                            window.location.hash = "?=tab62-1-3";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/A-practiceWords/practiceWord-3.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function practicebuyer() {
+    window.location.hash = "?=tab63";
+    $.ajax({
+        type: "get",
+        url: "../consult/practice/B-buyer/buyer.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab63-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/B-buyer/buyer-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab63-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/B-buyer/buyer-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function practiceseller() {
+    window.location.hash = "?=tab64";
+    $.ajax({
+        type: "get",
+        url: "../consult/practice/C-seller/seller.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab64-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/C-seller/seller-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab64-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/C-seller/seller-2.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function practiceChargeStandrad() {
+    window.location.hash = "?=tab65";
+    $.ajax({
+        type: "get",
+        url: "../consult/practice/D-chargeStandrad/chargeStandrad.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab65-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/D-chargeStandrad/chargeStandrad-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        default:
+                            break;
+                    }
+                })
+            })
+        }
+    });
+}
+
+function practiceStandrad() {
+    window.location.hash = "?=tab66";
+    $.ajax({
+        type: "get",
+        url: "../consult/practice/E-standrad/standrad.html",
+        dataType: "html",
+        success: function(data) {
+            $(".pvcontent").html(data);
+            $(".pvcont").find("a").each(function() {
+                $(this).click(function() {
+                    switch ($(this).index()) {
+                        case 1:
+                            window.location.hash = "?=tab66-1-1";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/E-standrad/standrad-1.html",
+                                dataType: "html",
+                                success: function(data) {
+                                    $(".pvcontent").html(data);
+                                }
+                            });
+                            break;
+                        case 2:
+                            window.location.hash = "?=tab66-1-2";
+                            $.ajax({
+                                type: "get",
+                                url: "../consult/practice/E-standrad/standrad-2.html",
                                 dataType: "html",
                                 success: function(data) {
                                     $(".pvcontent").html(data);

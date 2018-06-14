@@ -1,0 +1,30 @@
+    @import "mu.scss";
+    .pvcontent {
+        padding: 10px;
+        .charge-title {
+            width: 100%;
+            padding-left: 10px;
+            background: $majorColor;
+            line-height: 35px;
+            height: 35px;
+        }
+        .charge-content {
+            width: 100%;
+            margin-top: 50px;
+            p {
+                margin-top: 20px;
+            }
+        }
+        .pay {
+            margin-top: 20px;
+        }
+        .paycontent {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 200px;
+                height: 200px;
+                margin-top: 50px;
+            }
+        }
+    }

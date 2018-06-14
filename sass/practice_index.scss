@@ -1,0 +1,332 @@
+$majorColor:#ffd237;
+.title_bg {
+    width: 100%;
+    min-width: 1160px;
+    height: 28px;
+    background: black;
+    .title_meun {
+        width: 1160px;
+        margin: 0 auto;
+        height: 28px;
+        background: black;
+        ul {
+            margin-right: 0px;
+            float: right;
+            li {
+                float: left;
+                margin-right: 80px;
+                line-height: 28px;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.Logo {
+    width: 1160px;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+    img {
+        position: absolute;
+        top: 50%;
+        margin-top: -36px;
+        width: 272px;
+        height: 72px;
+    }
+    .search {
+        width: 900px;
+        height: 170px;
+        position: absolute;
+        top: 0px;
+        left: 378px;
+        z-index: 2;
+        .choose {
+            ul {
+                margin-top: 20px;
+                li {
+                    float: left;
+                    width: 82px;
+                    height: 31px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    border: 1px solid black;
+                    border-bottom: none;
+                    line-height: 31px;
+                    text-align: center;
+                    font-family: '微软雅黑';
+                    cursor: pointer;
+                }
+            }
+        }
+        .accurateSearch {
+            clear: both;
+            width: 890px;
+            height: 44px;
+            border: 3px solid black;
+            ul {
+                width: 890px;
+                height: 44px;
+                li {
+                    float: left;
+                    padding: 0px 0px 0 20px;
+                    margin-top: 10px;
+                    cursor: default;
+                    p {
+                        width: 70px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    input[type='text'] {
+                        width: 200px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .option {
+                    width: 120px;
+                    background-image: url('../img/xiala.png');
+                    background-repeat: no-repeat;
+                    background-position: 100px 10px;
+                    border-right: 1px solid #e1e1e1;
+                }
+                .csearch {
+                    padding: 0;
+                    margin-top: 0px;
+                    margin-left: 84px;
+                    border: none;
+                    input {
+                        width: 100px;
+                        height: 38px;
+                        color: white;
+                        background: black;
+                        outline: none;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .simpleSearch {
+            clear: both;
+            width: 890px;
+            height: 44px;
+            border: 3px solid black;
+            input {
+                float: left;
+            }
+            input[type='text'] {
+                width: 784px;
+                height: 38px;
+                border: none;
+                outline: none;
+                padding: 0 0 0 20px;
+            }
+            input[type='button'] {
+                width: 100px;
+                height: 38px;
+                border: none;
+                outline: none;
+                background: black;
+                color: white;
+            }
+        }
+    }
+    .tanchuang {
+        width: 890px;
+        border: 3px solid black;
+        position: absolute;
+        z-index: 2;
+        top: 114px;
+        left: 378px;
+        background: white;
+        padding-bottom: 50px;
+        .guan {
+            width: 890px;
+            height: 35px;
+            line-height: 35px;
+            span {
+                float: left;
+                margin-left: 30px;
+            }
+            a {
+                color: black;
+                float: right;
+                margin-right: 30px;
+            }
+        }
+        .zimu {
+            width: 890px;
+            ul {
+                margin-left: 15.5px;
+                width: 839px;
+                height: 34px;
+                border: 1px solid #e1e1e1;
+                border-right: none;
+                li {
+                    width: 31px;
+                    height: 33px;
+                    float: left;
+                    border-right: 1px solid #e1e1e1;
+                    line-height: 33px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-family: inherit;
+                    cursor: pointer;
+                }
+            }
+        }
+        .list {
+            width: 890px;
+            padding: 0 20px 0 20px;
+            ul {
+                width: 850px;
+                li {
+                    width: 141px;
+                    text-align: left;
+                    float: left;
+                    margin-left: 29px;
+                    margin-top: 10px;
+                    a {
+                        font-size: 12px;
+                        font-family: "微软雅黑";
+                    }
+                }
+            }
+        }
+    }
+    .jianjian {
+        width: 24.21px;
+        height: 24.21px;
+        border: 3px solid black;
+        border-left: none;
+        border-bottom: none;
+        transform: rotate(-45deg);
+        position: absolute;
+        background: white;
+        top: 103px;
+        left: 474px;
+        z-index: 2;
+    }
+}
+
+.navbg {
+    width: 100%;
+    height: 40px;
+    min-width: 1160px;
+    background: $majorColor;
+    .nav {
+        width: 1160px;
+        height: 40px;
+        background: $majorColor;
+        margin: 0 auto;
+        ul {
+            width: 1160px;
+            height: 40px;
+            li {
+                float: left;
+                width: 165px;
+                height: 40px;
+                line-height: 40px;
+                font-family: '微软雅黑';
+                font-size: 19px;
+                color: black;
+                text-align: center;
+                cursor: default;
+                font-weight: bold;
+                &:hover {
+                    background: black;
+                    color: white;
+                    a {
+                        color: white;
+                    }
+                }
+                a {
+                    color: black;
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bannerBg {
+    width: 100%;
+    min-width: 1160px;
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .banner {
+        width: 1160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 500px;
+        .gameChoose {
+            width: 290px;
+            height: 235px;
+            padding: 10px 20px 10px 20px;
+            box-shadow: 0.5px 0.5px 5px #ccc;
+            p {
+                color: black;
+                font-size: 18px;
+                font-weight: bold;
+                border-bottom: 1px solid black;
+            }
+            ul {
+                li {
+                    height: 30px;
+                    line-height: 30px;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        color: black;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    span {
+                        line-height: 30px;
+                    }
+                }
+            }
+            span {
+                a {
+                    color: black;
+                }
+            }
+        }
+        .rollimg {
+            width: 500px;
+            height: 235px;
+            box-shadow: 0.5px 0.5px 5px #ccc;
+        }
+        .entrance {
+            width: 290px;
+            height: 235px;
+            box-shadow: 0.5px 0.5px 5px #ccc;
+        }
+        .hotstudio {
+            width: 290px;
+            height: 235px;
+            box-shadow: 0.5px 0.5px 5px #ccc;
+        }
+        .rollitems {
+            width: 500px;
+            height: 235px;
+            box-shadow: 0.5px 0.5px 5px #ccc;
+        }
+        .publicitems {
+            width: 290px;
+            height: 235px;
+            box-shadow: 0.5px 0.5px 5px #ccc;
+        }
+    }
+}
