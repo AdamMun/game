@@ -205,10 +205,9 @@ $('.tab65').click(function() {
 })
 
 $('.tab66').click(function() {
-    practiceStandrad()
-})
-var cont = "";
-//寄售相关名词解释
+        practiceStandrad()
+    })
+    //寄售相关名词解释
 function consultConsign() {
     window.location.hash = '?=tab1';
     $.ajax({
@@ -216,7 +215,6 @@ function consultConsign() {
         url: "../consult/consult-consign.html",
         dataType: "html",
         success: function(data) {
-            cont = data;
             $(".pvcontent").html(data);
             $(".whyconsign").on("click", function() {
                 whyconsign();
@@ -235,7 +233,6 @@ function whyconsign() {
         url: "../consult/consult-whyconsign.html",
         dataType: "html",
         success: function(data) {
-            cont = data;
             $(".pvcontent").html(data);
         }
     });
